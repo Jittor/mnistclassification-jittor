@@ -10,7 +10,7 @@ from model import Model
 from jittor.dataset.mnist import MNIST
 import jittor.transform as trans
 
-jt.flags.use_cuda = 1
+jt.flags.use_cuda = 0 # if jt.flags.use_cuda = 1 will use gpu
 
 def train(model, train_loader, optimizer, epoch):
     model.train()
