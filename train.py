@@ -54,7 +54,7 @@ def main ():
     train_loader = MNIST(train=True, transform=trans.Resize(28)).set_attrs(batch_size=batch_size, shuffle=True)
 
 
-    val_loader = MNIST(train=True, transform=trans.Resize(28)) .set_attrs(batch_size=1, shuffle=False)
+    val_loader = MNIST(train=False, transform=trans.Resize(28)) .set_attrs(batch_size=1, shuffle=False)
 
 
     model = Model ()
